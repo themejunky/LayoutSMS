@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noInternetLayout"
+    style="@style/noInternet_container">
+
+
+    <ImageView
+        style="@style/noInternet_image"/>
+
+    <TextView
+        style="@style/noInternet_text_big"
+        android:text="@string/noInternetTitle"/>
+
+    <TextView
+        style="@style/noInternet_text_normal"
+        android:text="@string/noIntenertMessage"/>
+
+    <TextView
+        style="@style/noInternet_btn_reload"/>
+
+</LinearLayout>

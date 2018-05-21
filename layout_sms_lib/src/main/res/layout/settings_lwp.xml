@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+   >
+
+    <RelativeLayout
+        android:id="@+id/btn_wallpapers"
+        style="@style/Buttons2"
+        android:layout_height="80dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/btn_wallpaper_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-150dp"
+            android:layout_marginTop="-150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bk_wall" />
+
+        <ImageView
+            style="@style/Image_GB_Logo"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/text_wallpaper"
+            style="@style/TextView_GB_Logo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:text="@string/wallpapers"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttons"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/saveButton"
+        style="@style/wrap_wrap"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:textColor="@drawable/button_text_color"
+        android:text="@string/save"
+        />
+
+<ScrollView
+    android:layout_above="@id/saveButton"
+    android:layout_below="@id/btn_wallpapers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/match_match_vertical">
+
+        <LinearLayout
+            android:id="@+id/nFalling"
+            style="@style/linear_button">
+
+            <TextView
+                style="@style/text_title"
+                android:text="@string/falling_items"
+                />
+
+            <TextView
+                style="@style/text_description"
+                android:text="@string/select_item_type"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                style="@style/wrap_wrap"
+                >
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/nOneObject"
+                    style="@style/wrap_wrap"
+                    android:text="@string/falling_one_object" />
+
+                <RadioButton
+                    android:id="@+id/nTwoObject"
+                    style="@style/wrap_wrap"
+                    android:text="@string/falling_two_objects" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <View style="@style/devider" />
+        <LinearLayout
+            android:id="@+id/nDirection"
+            style="@style/linear_button">
+
+            <TextView
+                style="@style/text_title"
+                android:text="@string/direction"
+                />
+
+            <TextView
+                style="@style/text_description"
+                android:text="@string/direction_description"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                style="@style/wrap_wrap">
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/nTop"
+                    style="@style/wrap_wrap"
+                    android:text="@string/top_to_buttom" />
+
+                <RadioButton
+                    android:id="@+id/nButtom"
+                    style="@style/wrap_wrap"
+                    android:text="@string/buttom_to_top" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <View style="@style/devider" />
+        <LinearLayout
+            android:id="@+id/nSize"
+            style="@style/linear_button">
+
+            <TextView
+                style="@style/text_title"
+                android:text="@string/object_size"
+                />
+
+            <TextView
+                style="@style/text_description"
+                android:text="@string/small"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                style="@style/wrap_wrap"
+                >
+
+                <RadioButton
+                    android:id="@+id/nSmall"
+                    style="@style/wrap_wrap"
+                    android:text="@string/small" />
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/nMedium"
+                    style="@style/wrap_wrap"
+                    android:text="@string/medium" />
+                <RadioButton
+                    android:id="@+id/nLarge"
+                    style="@style/wrap_wrap"
+                    android:text="@string/large" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <View style="@style/devider" />
+        <LinearLayout
+            android:id="@+id/nSpeed"
+            style="@style/linear_button">
+
+            <TextView
+                style="@style/text_title"
+                android:text="@string/speed"
+                />
+
+            <TextView
+                style="@style/text_description"
+                android:text="@string/speed_desctiption"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                style="@style/wrap_wrap"
+                >
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/nOn"
+                    style="@style/wrap_wrap"
+                    android:text="@string/on" />
+
+                <RadioButton
+                    android:id="@+id/nOff"
+                    style="@style/wrap_wrap"
+                    android:text="@string/off" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <View style="@style/devider" />
+    </LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>

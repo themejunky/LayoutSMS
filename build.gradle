@@ -1,0 +1,55 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        //classpath 'com.google.gms:google-services:3.0.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "http://dl.appnext.com/" }
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    minSdkVersion = 17
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+    buildToolsVersion = '26.0.2'
+
+    adsManager = 'v4.0.46'
+    googleServices='15.0.0'
+    constraintLayout='1.0.2'
+    facebook = '4.26.0'
+    retrofit = '2.0.0'
+    calligraphy = '2.2.0'
+    glide='3.7.0'
+    appnext = '2+'
+    okhttpVersion = '3.4.1'
+    managerNativeAds = '1.0.0'
+    supportLibraryVersion ='26.1.0'
+    picasso = '2.5.2'
+    koushikdutta = '2.+'
+
+
+    themeVersionCode = 52
+    themeVersionName='1.0.52'
+
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/rlSplash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/rlSplashContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/gifview">
+
+            <ImageView
+                android:id="@+id/ivBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/background"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/rlLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/loading_animation"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:src="@mipmap/stop" />
+
+                <TextView
+                    android:layout_below="@id/loading_animation"
+                    android:id="@+id/tbLoading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/dontleave"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/buttons_color"
+                    android:textSize="24sp"
+                     />
+
+                <TextView
+                    android:id="@+id/pleaseText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tbLoading"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="35sp"
+                    android:layout_marginRight="35sp"
+                    android:text="@string/dontleave_desc"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/buttons_color"
+                    android:textSize="18sp"
+                    />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonDownload"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14dp"
+                android:textAllCaps="false"
+                android:background="@drawable/buttons"
+                android:text="@string/download_sms_plus"
+                android:textColor="@drawable/button_text_color" />
+
+            <LinearLayout
+                android:layout_above="@id/buttonDownload"
+                android:id="@+id/lnLogo"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlLoading"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    style="@style/dont_leave_reason">
+
+                    <ImageView
+                        style="@style/dont_leave_reason_image"/>
+
+                    <TextView
+                        style="@style/dont_leave_reason_text"
+                        android:text="@string/awesome_themes"/>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/dont_leave_reason">
+
+                    <ImageView
+                        style="@style/dont_leave_reason_image"/>
+
+                    <TextView
+                        style="@style/dont_leave_reason_text"
+                        android:text="@string/animated_emoji_packs"/>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/dont_leave_reason">
+
+                    <ImageView
+                        style="@style/dont_leave_reason_image"/>
+
+                    <TextView
+                        style="@style/dont_leave_reason_text"
+                        android:text="@string/beautiful_stickers"/>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/dont_leave_reason">
+
+                    <ImageView
+                        style="@style/dont_leave_reason_image"/>
+
+                    <TextView
+                        style="@style/dont_leave_reason_text"
+                        android:text="@string/private_box"/>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/dont_leave_reason">
+
+                    <ImageView
+                        style="@style/dont_leave_reason_image"/>
+
+                    <TextView
+                        style="@style/dont_leave_reason_text"
+                        android:text="@string/sms_blocker_blacklisting"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

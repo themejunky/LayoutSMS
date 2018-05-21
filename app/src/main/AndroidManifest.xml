@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sms.layout.themejunky.com.layoutsms">
+
+    <application
+        android:name="sms.layout.themejunky.com.layout_sms_lib.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="sms.layout.themejunky.com.layout_sms_lib.screens.main.MainActivity" />
+        <activity
+            android:name="sms.layout.themejunky.com.layout_sms_lib.screens.wallpapers.WallpapersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            />
+
+        <receiver android:name="sms.layout.themejunky.com.layout_sms_lib.receiver.MyReceiverVip"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.info.sms.vip.theme"></action>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="sms.layout.themejunky.com.layout_sms_lib.receiver.MyReciver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c813e749e191df69d8323a1732637f4f93fb21bb" />
+    </application>
+
+</manifest>

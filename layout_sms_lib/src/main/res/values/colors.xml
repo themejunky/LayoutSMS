@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9733e7</color>
+    <color name="colorPrimaryDark">#9733e7</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="background_splash">#FFFFFF</color>
+    <color name="white">#fff</color>
+    <color name="black">#232323</color>
+    <color name="background_download">#6d1cea</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- MainActivity -->
+    <color name="home_carouse_bg">@android:color/transparent</color>
+
+    <!-- Loading layout -->
+    <color name="loading_text_grey">#585757</color>
+
+    <!-- NoInternet layout -->
+
+    <color name="buttons_color">#16285a</color>
+
+    <color name="colorPrimarySms">#15aefb</color>
+    <color name="colorPrimaryDarkSms">#15aefb</color>
+    <color name="colorAccentSms">#15aefb</color>
+
+
+
+
+</resources>

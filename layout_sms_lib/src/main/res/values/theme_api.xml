@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:shrinkMode="strict">
+    <declare-styleable name="EmojiViewTheme">
+        <!-- Image for the key. This image needs to be a StateListDrawable, with the following
+             possible states: normal, btn_blue_pressed, checkable, checkable+btn_blue_pressed, checkable+checked,
+             checkable+checked+btn_blue_pressed. -->
+        <attr name="sticker_list" format="reference" />
+        <attr name="sticker_drawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="InboxFragmentTheme">
+
+        <attr name="app_default_color" format="reference" />
+        <attr name="app_accent_color" format="reference" />
+
+        <attr name="inbox_default_background" format="reference" />
+
+
+        <attr name="inbox_actionbar_background" format="reference" />
+        <attr name="inbox_actionbar_title_color" format="reference" />
+        <attr name="inbox_actionbar_btn_contacts_drawable" format="reference" />
+        <attr name="inbox_actionbar_btn_menu" format="reference" />
+        <attr name="inbox_actionbar_btn_back" format="reference" />
+        <attr name="inbox_actionbar_btn_settings" format="reference" />
+        <attr name="inbox_actionbar_btn_selectall" format="reference" />
+        <attr name="inbox_btn_default" format="reference" />
+        <attr name="inbox_btn_default_text_color" format="reference" />
+
+
+        <attr name="inbox_search_box_background" format="reference" />
+        <attr name="inbox_search_box_icon" format="reference" />
+        <attr name="inbox_search_box_edittext_drawable" format="reference" />
+        <attr name="inbox_search_box_text_color" format="reference" />
+        <attr name="inbox_search_box_text_hint_color" format="reference" />
+
+        <attr name="inbox_floating_button_color_accent" format="reference" />
+        <attr name="inbox_floating_button_color_accent_pressed" format="reference" />
+        <attr name="inbox_floating_button_color_ripple" format="reference" />
+
+        <attr name="inbox_actionbar_settings_button" format="reference" />
+        <attr name="inbox_actionbar_select_all" format="reference" />
+
+
+        <attr name="inbox_btn_default_app" format="reference" />
+        <attr name="inbox_floating_button_icon" format="reference" />
+        <attr name="inbox_floating_button_icons_background" format="reference" />
+        <attr name="inbox_floating_button_icons_background_shadow" format="reference" />
+        <attr name="inbox_floating_button_icon_cancel" format="reference" />
+        <attr name="inbox_floating_button_icon_mark_read" format="reference" />
+        <attr name="inbox_floating_button_icon_mark_unread" format="reference" />
+        <attr name="inbox_floating_button_icon_sticky" format="reference" />
+        <attr name="inbox_floating_button_icon_delete" format="reference" />
+        <attr name="inbox_floating_button_icon_secure" format="reference" />
+        <attr name="inbox_floating_button_icon_archive" format="reference" />
+
+        <attr name="inbox_list_divider" format="reference" />
+        <attr name="inbox_list_default_bubble_background" format="reference" />
+        <attr name="inbox_list_group_conversation_icon" format="reference" />
+
+        <attr name="inbox_list_title_size" format="reference" />
+        <attr name="inbox_list_title_notread_color" format="reference" />
+        <attr name="inbox_list_title_color" format="reference" />
+
+        <attr name="inbox_list_subtitle_size" format="reference" />
+        <attr name="inbox_list_subtitle_color" format="reference" />
+        <attr name="inbox_list_letter_color" format="reference" />
+        <attr name="inbox_list_unknown_contact" format="reference" />
+
+        <attr name="inbox_list_date_size" format="reference" />
+        <attr name="inbox_list_date_color" format="reference" />
+
+        <attr name="inbox_list_counter_size" format="reference" />
+        <attr name="inbox_list_counter_color" format="reference" />
+
+        <attr name="inbox_list_btn_call" format="reference" />
+        <attr name="inbox_list_btn_delete" format="reference" />
+
+        <attr name="inbox_list_checkbox" format="reference" />
+
+        <attr name="inbox_list_item_selected" format="reference" />
+        <attr name="inbox_list_item_background" format="reference" />
+        <attr name="inbox_list_subitem_left_background" format="reference" />
+        <attr name="inbox_list_subitem_right_background" format="reference" />
+        <attr name="inbox_list_item_sticky_color" format="reference" />
+        <attr name="inbox_layout_undo_textview_background" format="reference" />
+        <attr name="inbox_layout_undo_button_background" format="reference" />
+        <attr name="inbox_layout_undo_button_text_color" format="reference" />
+        <attr name="inbox_layout_undo_textview_text_color" format="reference" />
+
+
+        <attr name="tabs_accent_color" format="reference" />
+        <attr name="tabs_text_color" format="reference" />
+
+        <attr name="inbox_list_new_message_dot" format="reference" />
+        <attr name="inbox_drawer_left_actionbar_background" format="reference" />
+        <attr name="inbox_drawer_left_background" format="reference" />
+        <attr name="inbox_drawer_left_divider_background" format="reference" />
+        <attr name="inbox_drawer_left_actionbar_title_color" format="reference" />
+        <attr name="inbox_drawer_left_list_title_color" format="reference" />
+        <attr name="inbox_drawer_left_list_icon_theme_manager" format="reference" />
+        <attr name="inbox_drawer_left_list_icon_stickers" format="reference" />
+        <attr name="inbox_drawer_left_list_icon_settings" format="reference" />
+        <attr name="inbox_drawer_left_list_icon_secure_box" format="reference" />
+        <attr name="inbox_drawer_left_list_icon_archive" format="reference" />
+        <attr name="inbox_drawer_left_list_icon_black_list" format="reference" />
+        <attr name="inbox_drawer_left_list_icon_rate_sms" format="reference" />
+
+        <attr name="inbox_drawer_left_list_icon_arrow" format="reference" />
+        <attr name="inbox_drawer_left_title_background" format="reference" />
+        <attr name="inbox_drawer_left_new_theme_notification_icon" format="reference" />
+        <attr name="inbox_drawer_left_secure_menu_item" format="reference" />
+
+
+        <attr name="inbox_drawer_right_actionbar_background" format="reference" />
+        <attr name="inbox_drawer_right_actionbar_btn_back" format="reference" />
+        <attr name="inbox_drawer_right_actionbar_title_color" format="reference" />
+        <attr name="inbox_drawer_right_tabs_text_color" format="reference" />
+        <attr name="inbox_drawer_right_tabs_background_color" format="reference" />
+        <attr name="inbox_drawer_right_tabs_accent_color" format="reference" />
+
+
+        <attr name="inbox_drawer_right_search_box_icon" format="reference" />
+        <attr name="inbox_drawer_right_search_box_background" format="reference" />
+        <attr name="inbox_drawer_right_search_box_input_text_background" format="reference" />
+        <attr name="inbox_drawer_right_search_box_cancel_icon" format="reference" />
+        <attr name="inbox_drawer_right_search_box_input_text_color" format="reference" />
+        <attr name="inbox_drawer_right_search_box_input_hint_color" format="reference" />
+        <attr name="inbox_drawer_right_background" format="reference" />
+        <attr name="inbox_drawer_right_list_title_color" format="reference" />
+        <attr name="inbox_drawer_right_list_contact_background" format="reference" />
+        <attr name="inbox_drawer_right_list_contact_icon" format="reference" />
+        <attr name="inbox_drawer_right_list_divider" format="reference" />
+
+
+        <attr name="inbox_archive_actionbar_background" format="reference" />
+        <attr name="inbox_archive_background" format="reference" />
+        <attr name="inbox_secure_background" format="reference" />
+        <attr name="inbox_archive_actionbar_button_add_conversation_background" format="reference" />
+        <attr name="inbox_archive_actionbar_button_remove_conversation_background" format="reference" />
+        <attr name="inbox_archive_btn_back" format="reference" />
+        <attr name="inbox_add_conversation_list_divider" format="reference" />
+        <attr name="inbox_add_conversation_button_add_background" format="reference" />
+        <attr name="inbox_add_conversation_button_add_text_color" format="reference" />
+
+
+        <attr name="inbox_secure_btn_settings" format="reference" />
+        <attr name="inbox_secure_btn_add_contact" format="reference" />
+        <attr name="inbox_secure_btn_remove_contact" format="reference" />
+        <attr name="inbox_secure_btn_back" format="reference" />
+
+        <attr name="inbox_blacklist_btn_add_contact" format="reference" />
+        <attr name="inbox_blacklist_btn_remove_contact" format="reference" />
+        <attr name="inbox_blacklist_btn_back" format="reference" />
+        <attr name="inbox_blacklist_list_divider" format="reference" />
+        <attr name="inbox_blacklist_background" format="reference" />
+        <attr name="inbox_list_new_ad" format="reference" />
+
+        <attr name="inbox_start_conversation_button_has_shadow" format="boolean" />
+
+        <attr name="inbox_list_swipe_left_text_color" format="reference" />
+        <attr name="inbox_list_swipe_right_text_color" format="reference" />
+
+        <attr name="inbox_list_search_background" format="reference" />
+        <attr name="inbox_list_search_text_background" format="reference" />
+
+
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="ComposerTheme">
+        <attr name="composer_default_color" format="reference" />
+        <attr name="composer_accent_color" format="reference" />
+        <attr name="composer_actionbar_background" format="reference" />
+        <attr name="composer_actionbar_quick_reply" format="reference" />
+        <attr name="composer_actionbar_title_color" format="reference" />
+        <attr name="composer_actionbar_title_size" format="reference" />
+        <attr name="composer_actionbar_btn_back" format="reference" />
+        <attr name="composer_actionbar_btn_call" format="reference" />
+        <attr name="composer_actionbar_btn_menu" format="reference" />
+        <attr name="composer_actionbar_btn_selectall" format="reference" />
+
+
+        <attr name="composer_quickreply_btn_default" format="reference" />
+        <attr name="composer_quickreply_left_arrow" format="reference" />
+        <attr name="composer_quickreply_right_arrow" format="reference" />
+        <attr name="composer_quickreply_date_background" format="reference" />
+        <attr name="composer_quickreply_messages_counter_background" format="reference" />
+        <attr name="composer_quickreply_messages_counter_text_color" format="reference" />
+        <attr name="composer_quickreply_letter_text_color" format="reference" />
+        <attr name="composer_quickreply_btn_close" format="reference" />
+        <attr name="composer_quickreply_btn_send" format="reference" />
+        <attr name="composer_quickreply_text_color" format="reference" />
+        <attr name="composer_quickreply_text_date_color" format="reference" />
+        <attr name="composer_quickreply_text_title_color" format="reference" />
+        <attr name="composer_quickreply_btn_default_text_color" format="reference" />
+        <attr name="composer_quickreply_text_sub_title_color" format="reference" />
+        <attr name="composer_quickreply_edit_text_background" format="reference" />
+        <attr name="composer_quickreply_edit_text_color" format="reference" />
+        <attr name="composer_quickreply_edit_text_hint_color" format="reference" />
+        <attr name="composer_quickreply_actionbar_background" format="reference" />
+        <attr name="composer_quickreply_divider" format="reference" />
+        <attr name="composer_quickreply_background" format="reference" />
+        <attr name="composer_quickreply_actionbar_default_contact_background" format="reference" />
+        <attr name="composer_quickreply_actionbar_default_unknown_background" format="reference" />
+
+
+        <attr name="composer_list_subtitle_size" format="reference" />
+        <attr name="composer_list_subtitle_color" format="reference" />
+        <attr name="composer_list_message_opponent_color" format="reference" />
+        <attr name="composer_list_date_size" format="reference" />
+        <attr name="composer_list_date_color" format="reference" />
+        <attr name="composer_list_bubble" format="reference" />
+        <attr name="composer_list_name_holder_background" format="reference" />
+        <attr name="composer_list_date_hour" format="reference" />
+        <attr name="composer_list_date_month" format="reference" />
+        <attr name="composer_list_link_text_color" format="reference" />
+        <attr name="composer_list_alert_icon" format="reference" />
+        <attr name="composer_list_date_background_big" format="reference" />
+        <attr name="composer_list_date_background_small" format="reference" />
+        <attr name="composer_list_mybubble" format="reference" />
+        <attr name="composer_list_checkbox" format="reference" />
+        <attr name="composer_list_unknown_contact_icon" format="reference" />
+        <attr name="composer_list_my_unknown_contact_icon" format="reference" />
+        <attr name="composer_list_default_background" format="reference" />
+        <attr name="composer_list_letter_icon_color" format="reference" />
+
+
+        <attr name="composer_attach_background" format="reference" />
+        <attr name="composer_audio_text_color" format="reference" />
+        <attr name="composer_attach_icon_gif" format="reference" />
+        <attr name="composer_attach_icon_image" format="reference" />
+        <attr name="composer_attach_icon_quick_text" format="reference" />
+        <attr name="composer_attach_icon_scheduled" format="reference" />
+        <attr name="composer_attach_icon_contact" format="reference" />
+        <attr name="composer_attach_icon_audio" format="reference" />
+        <attr name="composer_attach_icon_locker" format="reference" />
+        <attr name="composer_attach_icon_keyboard" format="reference" />
+        <attr name="composer_attach_text_color" format="reference" />
+
+        <attr name="composer_emoji_button_background" format="reference" />
+        <attr name="composer_stickers_button_background" format="reference" />
+        <attr name="composer_input_text_background" format="reference" />
+        <attr name="composer_send_button_background" format="reference" />
+        <attr name="composer_attach_button_background" format="reference" />
+        <attr name="composer_input_background" format="reference" />
+        <attr name="composer_input_text_color" format="reference" />
+        <attr name="composer_input_text_hint_color" format="reference" />
+
+        <attr name="composer_edit_menu_background" format="reference" />
+        <attr name="composer_edit_menu_icon_delete" format="reference" />
+        <attr name="composer_edit_menu_icon_forward" format="reference" />
+        <attr name="composer_edit_menu_icon_copy" format="reference" />
+        <attr name="composer_edit_menu_icon_secure_box" format="reference" />
+        <attr name="composer_edit_menu_text_color" format="reference" />
+        <attr name="composer_button_background" format="reference" />
+        <attr name="composer_menu_button_background" format="reference" />
+        <attr name="composer_poligon_background" format="reference" />
+        <attr name="composer_rounded_button" format="reference" />
+        <attr name="composer_background" format="reference" />
+        <attr name="composer_background_archive" format="reference" />
+        <attr name="composer_background_secure" format="reference" />
+
+        <attr name="composer_new_message_top_edit_text_hint_color" format="reference" />
+        <attr name="composer_new_message_top_background" format="reference" />
+        <attr name="composer_new_message_top_edit_text_background" format="reference" />
+        <attr name="composer_new_message_top_edit_text_color" format="reference" />
+        <attr name="composer_new_message_top_text_color" format="reference" />
+        <attr name="composer_new_message_top_list_text_color" format="reference" />
+        <attr name="composer_new_message_top_list_text_background" format="reference" />
+
+
+        <attr name="composer_contact_menu_button_background" format="reference" />
+        <attr name="composer_contact_menu_poligon_background" format="reference" />
+        <attr name="composer_contact_menu_text_color" format="reference" />
+        <attr name="composer_contact_menu_divider_background" format="reference" />
+        <attr name="composer_contact_menu_checkbox_background" format="reference" />
+
+        <attr name="composer_add_media_takenewphoto_icon" format="reference" />
+        <attr name="composer_add_media_check_box_icon" format="reference" />
+        <attr name="composer_recorder_icon" format="reference" />
+        <attr name="composer_giphy_tag" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PinTheme">
+        <attr name="pin_default_color" format="reference" />
+        <attr name="pin_accent_color" format="reference" />
+
+        <attr name="pin_actionbar_background" format="reference" />
+        <attr name="pin_actionbar_title_color" format="reference" />
+        <attr name="pin_actionbar_title_size" format="reference" />
+        <attr name="pin_actionbar_btn_back" format="reference" />
+
+        <attr name="pin_btn_continue_background" format="reference" />
+        <attr name="pin_lock_icon" format="reference" />
+        <attr name="pin_checkbox_background" format="reference" />
+
+
+    </declare-styleable>
+
+    <declare-styleable name="SettingsTheme">
+        <attr name="settings_default_color" format="reference" />
+        <attr name="settings_accent_color" format="reference" />
+
+        <attr name="settings_actionbar_background" format="reference" />
+        <attr name="settings_actionbar_title_color" format="reference" />
+        <attr name="settings_actionbar_title_size" format="reference" />
+        <attr name="settings__actionbar_btn_back" format="reference" />
+
+        <attr name="settings_list_title_size" format="reference" />
+        <attr name="settings_list_title_color" format="reference" />
+
+        <attr name="settings_list_subtitle_size" format="reference" />
+        <attr name="settings_list_subtitle_color" format="reference" />
+
+        <attr name="settings_list_name_holder_background" format="reference" />
+        <attr name="settings_list_check_box_background" format="reference" />
+        <attr name="settings_button_background" format="reference" />
+        <attr name="settings_seek_bar" format="reference" />
+        <attr name="settings_seek_dot" format="reference" />
+
+        <attr name="settings_preview_bubble_background" format="reference" />
+        <attr name="settings_preview_text_color" format="reference" />
+        <attr name="settings_preview_text_opponent_color" format="reference" />
+        <attr name="settings_preview_bubble_opponent_background" format="reference" />
+        <attr name="settings_preview_icon_opponent_placeholder" format="reference" />
+        <attr name="settings_preview_icon_placeholder" format="reference" />
+        <attr name="settings_preview_date_background" format="reference" />
+        <attr name="settings_preview_date_color" format="reference" />
+
+
+    </declare-styleable>
+
+    <declare-styleable name="ThemeManagerActivityTheme">
+        <attr name="manager_default_color" format="reference" />
+        <attr name="manager_accent_color" format="reference" />
+
+        <attr name="manager_actionbar_background" format="reference" />
+        <attr name="manager_actionbar_title_color" format="reference" />
+        <attr name="manager_actionbar_title_size" format="reference" />
+
+        <attr name="tabhost_accent_color" format="reference" />
+        <attr name="tabhost_text_color" format="reference" />
+
+        <attr name="btn_select_theme_stickers_background" format="reference" />
+
+
+    </declare-styleable>
+</resources>
