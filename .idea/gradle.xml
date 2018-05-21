@@ -8,7 +8,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/AdsManager_1.0.9" />
             <option value="$PROJECT_DIR$/TJ_Gae-release" />
             <option value="$PROJECT_DIR$/TJ_NotifyRating-release" />
             <option value="$PROJECT_DIR$/andengine" />

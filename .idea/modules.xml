@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AdsManager_1.0.9/AdsManager_1.0.9.iml" filepath="$PROJECT_DIR$/AdsManager_1.0.9/AdsManager_1.0.9.iml" />
       <module fileurl="file://$PROJECT_DIR$/LayoutSMS.iml" filepath="$PROJECT_DIR$/LayoutSMS.iml" />
       <module fileurl="file://$PROJECT_DIR$/TJ_Gae-release/TJ_Gae-release.iml" filepath="$PROJECT_DIR$/TJ_Gae-release/TJ_Gae-release.iml" />
       <module fileurl="file://$PROJECT_DIR$/TJ_NotifyRating-release/TJ_NotifyRating-release.iml" filepath="$PROJECT_DIR$/TJ_NotifyRating-release/TJ_NotifyRating-release.iml" />

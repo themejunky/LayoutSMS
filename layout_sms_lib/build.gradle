@@ -14,10 +14,12 @@ repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
 
+
 android {
     compileSdkVersion 27
 
     defaultConfig {
+        multiDexEnabled true
         minSdkVersion 17
         targetSdkVersion 27
         versionCode 1
@@ -37,6 +39,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:multidex:1.0.1'
     compile "com.google.android.gms:play-services-analytics:$rootProject.googleServices"
     compile "uk.co.chrisjenx:calligraphy:$rootProject.calligraphy"
     compile "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttpVersion"
@@ -54,9 +57,9 @@ dependencies {
     compile "com.google.android.gms:play-services-ads:$rootProject.googleServices"
     compile "com.appnext.sdk:native-ads2:$rootProject.appnext"
     compile "com.appnext.sdk:ads:$rootProject.appnext"
-
     implementation "com.github.themejunky:AdsManager:${adsManager}"
     //implementation project(':AdsManager_1.0.9')
+
     implementation project(':TJ_Gae-release')
     implementation project(':TJ_NotifyRating-release')
     compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') { transitive = true; }

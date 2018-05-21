@@ -1,1 +1,1 @@
-include ':app', ':layout_sms_lib', ':AdsManager_1.0.9', ':TJ_Gae-release', ':TJ_NotifyRating-release', ':andengine', ':andengine_box2d', ':andenginelivewallpaperextension'
+include ':app', ':layout_sms_lib', ':TJ_Gae-release', ':TJ_NotifyRating-release', ':andengine', ':andengine_box2d', ':andenginelivewallpaperextension'
