@@ -8,11 +8,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/TJ_Gae-release" />
-            <option value="$PROJECT_DIR$/TJ_NotifyRating-release" />
-            <option value="$PROJECT_DIR$/andengine" />
-            <option value="$PROJECT_DIR$/andengine_box2d" />
-            <option value="$PROJECT_DIR$/andenginelivewallpaperextension" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/layout_sms_lib" />
           </set>

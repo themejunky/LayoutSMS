@@ -17,11 +17,11 @@ repositories {
 }
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 26
     defaultConfig {
         applicationId "sms.layout.themejunky.com.layoutsms"
         minSdkVersion 17
-        targetSdkVersion 27
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -36,12 +36,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     implementation project(':layout_sms_lib')
-    implementation project(':andengine')
-    implementation project(':andengine_box2d')
-    implementation project(':andenginelivewallpaperextension')
-    implementation project(':TJ_Gae-release')
-    implementation project(':TJ_NotifyRating-release')
 }

@@ -10,9 +10,6 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
-
-import com.example.tj_notifyrating.Module_NotifyRating;
-
 import java.lang.ref.WeakReference;
 
 import module.themejunky.com.tj_gae.Module_GoogleAnalyticsEvents;
@@ -34,18 +31,18 @@ public class ApplySms {
     }
 
     public void applyTheme() {
-
+/*
         Module_NotifyRating notifyRating = new Module_NotifyRating(activity,RateActivity.class,activity.getPackageName());
         notifyRating.set_DebugMode("notifiTest");
         notifyRating.set_HoursAndRepeateTimes((1000*60*15),1,(1000*60*5));
         notifyRating.set_TextAndIcon("Your opinion matters!","How would you rate our app?", R.drawable.ic_launcher);
-
+*/
 
 
         String mainApp = isPackageInstalled("com.jb.gosms.theme.bestthemes.paris") ? "com.jb.gosms.theme.bestthemes.paris" : "com.smsplus.app";
         intent = activity.getPackageManager().getLaunchIntentForPackage(activity.getPackageName().contains("samsung") ? "com.smsplus.samsung.app" : mainApp);
         if (intent != null) {
-            notifyRating.start();
+            //notifyRating.start();
             mProgressDialog = new ProgressDialog(activity);
             mProgressDialog.setMessage("Applying theme...");
             mProgressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
