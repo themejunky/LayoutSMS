@@ -34,7 +34,7 @@ ext {
     compileSdkVersion = 26
     buildToolsVersion = '26.0.2'
 
-    adsManager = 'v4.0.47'
+    adsManager = 'v4.0.57'
     googleServices='15.0.0'
     constraintLayout='1.0.2'
     facebook = '4.26.0'

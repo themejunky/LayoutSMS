@@ -29,6 +29,7 @@ import java.util.TimerTask;
 
 import module.themejunky.com.tj_gae.Module_GoogleAnalyticsEvents;
 import sms.layout.themejunky.com.layout_sms_lib.MainApplication;
+import sms.layout.themejunky.com.layout_sms_lib.ManagerOnboarding;
 import sms.layout.themejunky.com.layout_sms_lib.R;
 import sms.layout.themejunky.com.layout_sms_lib.lwp.ManagerFallingHeartsLwp;
 import sms.layout.themejunky.com.layout_sms_lib.receiver.MyReceiverVip;
@@ -102,11 +103,11 @@ public class MainActivity extends SlaveActivity implements MainContract.View, Ma
             @Override
             public void run() {
                 loading_animation_container.setVisibility(View.GONE);
-                if (!MyReceiverVip.isVip && flowAdsFirst != null) {
-                    if (flowAdsFirst.size() > 0) {
+                if (!MyReceiverVip.isVip && flowTest != null) {
+                    if (flowTest.size() > 0) {
                         //adsManager.setNativeFlowAndShowAds(flowAdsFirst, containerFacebook, containerAdmob, containerAppnext);
                         //adsManager.setInterFlowAndShowAds(flowAdsFirst, ConstantsAction.INTRO);
-                        adsManager.getManagerInterstitial().showInterstitial(flowAdsFirst, ConstantsAction.INTRO);
+                        adsManager.getManagerInterstitial().showInterstitial(flowTest, ConstantsAction.INTRO);
                         StartShaking();
                     }
                 }
@@ -217,7 +218,6 @@ public class MainActivity extends SlaveActivity implements MainContract.View, Ma
             } else {
                 ((MainApplication) getApplication()).addToPool(new CallApplyTheme(localWeakReference, mGAEWeak));
             }
-
         } else if (i == R.id.btn_best) {
             mGAE.getEvents(R.string.analytics_event_themes, "Buttons", "Click on Our Best Button");
             if (bestList.size() > 0) {
@@ -225,7 +225,6 @@ public class MainActivity extends SlaveActivity implements MainContract.View, Ma
             } else {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.themejunky.launchers")));
             }
-
         } else if (i == R.id.btn_wallpapers) {
             mGAE.getEvents(R.string.analytics_event_themes, "Buttons", "Click on Wallpapers Button");
             if (adsManager.getManagerInterstitial().isSomeAdLoaded() && flowTest.size() > 0 && !MyReceiverVip.isVip) {
@@ -233,7 +232,6 @@ public class MainActivity extends SlaveActivity implements MainContract.View, Ma
             } else {
                 intentStarter.redirect(2);
             }
-
         } else if (i == R.id.nImageShake) {
             mGAE.getEvents(R.string.analytics_event_themes, "Buttons", "Click on Share Button");
             Intent sendIntent = new Intent();
@@ -241,12 +239,12 @@ public class MainActivity extends SlaveActivity implements MainContract.View, Ma
             sendIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.share_text));
             sendIntent.setType("text/plain");
             startActivity(Intent.createChooser(sendIntent, getResources().getText(R.string.app_name)));
-
         } else if (i == R.id.btn_liveWallpaper) {
             mGAE.getEvents(R.string.analytics_event_themes, "Buttons", "Click on Live Wallpapers Button");
             if (adsManager.getManagerInterstitial().isSomeAdLoaded() && flowTest.size() > 0 && !MyReceiverVip.isVip) {
                 adsManager.getManagerInterstitial().showInterstitial(flowTest, ConstantsAction.LIVE_WALLPAPERS);
             } else {
+                Log.d("testttt","btn_liveWallpaper 2");
                 new ManagerFallingHeartsLwp(this).set();
             }
 
@@ -336,8 +334,8 @@ public class MainActivity extends SlaveActivity implements MainContract.View, Ma
 
     @Override
     public void onBackPressed() {
-        if (adsManager.getManagerInterstitial().isSomeAdLoaded() && flowAdsExit.size() > 0 && !MyReceiverVip.isVip) {
-            adsManager.getManagerInterstitial().showInterstitial(flowAdsExit, ConstantsAction.GET_MORE);
+        if (adsManager.getManagerInterstitial().isSomeAdLoaded() && flowTest.size() > 0 && !MyReceiverVip.isVip) {
+            adsManager.getManagerInterstitial().showInterstitial(flowTest, ConstantsAction.GET_MORE);
         } else {
             Intent intent = getPackageManager().getLaunchIntentForPackage(getApplicationContext().getString(R.string.mother_packagename));
             if (intent != null) {

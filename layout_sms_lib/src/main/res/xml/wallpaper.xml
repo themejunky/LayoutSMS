@@ -2,5 +2,5 @@
 <wallpaper
         xmlns:android="http://schemas.android.com/apk/res/android"  
         android:thumbnail="@drawable/ic_launcher"
-        android:settingsActivity="com.themejunky.flavorstheme.lwp.SettingsLwp"
+        android:settingsActivity="sms.layout.themejunky.com.layout_sms_lib.lwp.SettingsLwp"
         />

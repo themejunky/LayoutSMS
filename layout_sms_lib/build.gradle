@@ -19,7 +19,6 @@ android {
     compileSdkVersion 26
 
     defaultConfig {
-        multiDexEnabled true
         minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
@@ -39,7 +38,6 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:multidex:1.0.1'
     compile "com.google.android.gms:play-services-analytics:$rootProject.googleServices"
     compile "uk.co.chrisjenx:calligraphy:$rootProject.calligraphy"
     compile "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttpVersion"
@@ -56,16 +54,15 @@ dependencies {
     compile "com.google.android.gms:play-services-ads:$rootProject.googleServices"
     compile "com.appnext.sdk:native-ads2:$rootProject.appnext"
     compile "com.appnext.sdk:ads:$rootProject.appnext"
-
     implementation "com.github.themejunky:AdsManager:${adsManager}"
-    //implementation 'com.github.themejunky:Module_GoogleAnalyticsEvents:v1.0.0'
-    //implementation 'com.github.themejunky:Module_RatingNotification:v1.0.0'
+
     implementation files('src/main/lib/andengine.jar')
     implementation files('src/main/lib/andengine_box2d.jar')
     implementation files('src/main/lib/andenginelivewallpaperextension.jar')
     implementation files('src/main/lib/TJ_Gae-release.jar')
-    //implementation files('src/main/lib/TJ_NotifyRating-release.jar')
+    implementation files('src/main/lib/TJ_NotifyRating-release.jar')
 
     compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') { transitive = true; }
     compile "com.koushikdutta.ion:ion:$rootProject.koushikdutta"
+    implementation files('src/main/lib/TJ_NotifyRating-release.jar')
 }
