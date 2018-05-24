@@ -3,7 +3,6 @@ package sms.layout.themejunky.com.layout_sms_lib;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
-import sms.layout.themejunky.com.layout_sms_lib.screens.main.MainActivity;
 
 public class ManagerOnboarding {
     private static boolean status = false;
@@ -15,7 +14,7 @@ public class ManagerOnboarding {
 
     public static void setStatus(Context mContext, boolean isRating){
         status = isRating;
-        Log.d("testttt","setStatus "+status);
+        Log.d("testing","setStatus "+status);
         Intent Intent = new Intent(mContext, sms.layout.themejunky.com.layout_sms_lib.screens.main.MainActivity.class);
         mContext.startActivity(Intent);
     }

@@ -17,6 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="sms.layout.themejunky.com.layout_sms_lib.screens.main.MainActivity"/>
     </application>
 
 </manifest>
