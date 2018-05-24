@@ -29,4 +29,4 @@ allprojects {
 
 
 
-        ManagerOnboarding.setStatus(this, true);
+ManagerOnboarding.setStatus(this, true);
