@@ -40,15 +40,15 @@ public class ApplySms {
         intent = activity.getPackageManager().getLaunchIntentForPackage(activity.getPackageName().contains("samsung") ? "com.smsplus.samsung.app" : mainApp);
 
         if (intent != null) {
-            Log.d("testttt","test "+ManagerOnboarding.getStatus());
+            //Log.d("testttt","test "+ManagerOnboarding.getStatus());
 
-            if (ManagerOnboarding.getStatus()) {
+            //if (ManagerOnboarding.getStatus()) {
                 Module_NotifyRating notifyRating = new Module_NotifyRating(activity, RateActivity.class, activity.getPackageName());
                 notifyRating.set_DebugMode("notifiTest");
                 notifyRating.set_HoursAndRepeateTimes((1000 * 60 * 15), 1, (1000 * 60 * 5));
                 notifyRating.set_TextAndIcon("Your opinion matters!", "How would you rate our app?", R.drawable.ic_launcher);
                 notifyRating.start();
-            }
+            //}
 
             mProgressDialog = new ProgressDialog(activity);
             mProgressDialog.setMessage("Applying theme...");

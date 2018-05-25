@@ -49,6 +49,8 @@ import themejunky.module_adsmanager.ads.AdsListenerManager;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
+import static sms.layout.themejunky.com.layout_sms_lib.ManagerOnboarding.classRedirected;
+
 
 public class MainActivity extends SlaveActivity implements MainContract.View, MainContract.Retroift, View.OnClickListener, AdsListenerManager.ListenerAds {
 
@@ -212,12 +214,15 @@ public class MainActivity extends SlaveActivity implements MainContract.View, Ma
     public void onClick(View v) {
         int i = v.getId();
         if (i == R.id.btn_apply) {
+           redirectTo(classRedirected);
+            /*
             mGAE.getEvents(R.string.analytics_event_themes, "Buttons", "Click on Apply Button");
             if (adsManager.getManagerInterstitial().isSomeAdLoaded() && flowTest.size() > 0 && !MyReceiverVip.isVip) {
                 adsManager.getManagerInterstitial().showInterstitial(flowTest, ConstantsAction.APPLY);
             } else {
                 ((MainApplication) getApplication()).addToPool(new CallApplyTheme(localWeakReference, mGAEWeak));
             }
+            */
         } else if (i == R.id.btn_best) {
             mGAE.getEvents(R.string.analytics_event_themes, "Buttons", "Click on Our Best Button");
             if (bestList.size() > 0) {
@@ -439,4 +444,9 @@ public class MainActivity extends SlaveActivity implements MainContract.View, Ma
         };
         timer.schedule(timerTask, delayStartMilisec, startAfterMilisec);
     }
+
+    public void redirectTo(Class myClass){
+        startActivity(new Intent(MainActivity.this,myClass));
+    }
+
 }

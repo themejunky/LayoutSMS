@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         finish(); //in order to not be returned to this screen after user exits the library activities
-        ManagerOnboarding.setStatus(this, true); // if boolean isRating is set to true, the user is notified about the rating
+        ManagerOnboarding.initLayout(this, Main2Activity.class);
+
     }
 }
