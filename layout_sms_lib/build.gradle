@@ -60,7 +60,7 @@ dependencies {
     implementation files('src/main/lib/andengine_box2d.jar')
     implementation files('src/main/lib/andenginelivewallpaperextension.jar')
     implementation files('src/main/lib/TJ_Gae-release.jar')
-    implementation files('src/main/lib/TJ_NotifyRating-release.jar')
+    //implementation files('src/main/lib/TJ_NotifyRating-release.jar')
 
     compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') { transitive = true; }
     compile "com.koushikdutta.ion:ion:$rootProject.koushikdutta"
