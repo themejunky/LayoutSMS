@@ -445,7 +445,7 @@ public class MainActivity extends SlaveActivity implements MainContract.View, Ma
         timer.schedule(timerTask, delayStartMilisec, startAfterMilisec);
     }
 
-    public void redirectTo(Class myClass){
+    private void redirectTo(Class myClass){
         startActivity(new Intent(MainActivity.this,myClass));
     }
 
