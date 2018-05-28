@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LayoutSMS.iml" filepath="$PROJECT_DIR$/LayoutSMS.iml" />
+      <module fileurl="file://C:\Users\Zalman\Downloads\LayoutSMSCommit\LayoutSMS.iml" filepath="C:\Users\Zalman\Downloads\LayoutSMSCommit\LayoutSMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LayoutSMSCommit.iml" filepath="$PROJECT_DIR$/.idea/LayoutSMSCommit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Zalman\Downloads\LayoutSMSCommit\app\app.iml" filepath="C:\Users\Zalman\Downloads\LayoutSMSCommit\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/layout_sms_lib/layout_sms_lib.iml" filepath="$PROJECT_DIR$/layout_sms_lib/layout_sms_lib.iml" />
+      <module fileurl="file://C:\Users\Zalman\Downloads\LayoutSMSCommit\layout_sms_lib\layout_sms_lib.iml" filepath="C:\Users\Zalman\Downloads\LayoutSMSCommit\layout_sms_lib\layout_sms_lib.iml" />
     </modules>
   </component>
 </project>

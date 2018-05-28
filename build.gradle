@@ -30,9 +30,9 @@ task clean(type: Delete) {
 
 ext {
     minSdkVersion = 17
-    targetSdkVersion = 26
-    compileSdkVersion = 26
-    buildToolsVersion = '26.0.2'
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+    buildToolsVersion = '27.1.0'
 
     adsManager = 'v4.0.57'
     googleServices='15.0.0'
@@ -44,7 +44,7 @@ ext {
     appnext = '2+'
     okhttpVersion = '3.4.1'
     managerNativeAds = '1.0.0'
-    supportLibraryVersion ='26.1.0'
+    supportLibraryVersion ='27.1.0'
     picasso = '2.5.2'
     koushikdutta = '2.+'
 
